@@ -1,1 +1,1 @@
-ny+melding
+text+example
