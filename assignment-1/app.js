@@ -1,11 +1,5 @@
 const http = require('http');
-const greeting = (req, res) => {
-  res.setHeader('Content-Type', 'text/html');
-  res.write('<html>');
-  res.write('<body><h1>Hello World!</h1></body>');
-  res.write('</html>');
-  res.end();
-};
+const routes = require('./routes');
 
-const server = http.createServer(greeting);
+const server = http.createServer(routes.greeting);
 server.listen(3000);
