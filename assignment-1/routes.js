@@ -39,11 +39,15 @@ const app = (req, res) => {
       console.log(body);
     });
 
-    return req.on('end', () => {
+    req.on('end', () => {
       const parsedBody = Buffer.concat(body).toString();
       const name = parsedBody.split('=')[1];
       console.log(name);
     });
+
+    res.statusCode = 302;
+    res.setHeader('Location', '/');
+    res.end();
   }
 };
 
