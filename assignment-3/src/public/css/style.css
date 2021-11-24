@@ -12,3 +12,29 @@ body {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+
+main {
+  text-align: center;
+}
+
+container {
+  display: flex;
+}
+
+figure {
+  width: 250px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+figure img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+figcaption {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
